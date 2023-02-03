@@ -1,3 +1,9 @@
+:root {
+    --primary-toggle-color: #2980b9;
+    --secondary-toggle-color: #af4548;
+    --tertiary-toggle-color: #b9292e;
+}
+
 #skitt-ui {
     display: block !important;
 }
@@ -6,7 +12,7 @@
 }
 #skitt-ui {
     display: inline-block;
-    background-color: #2980b9;
+    background-color: var(--secondary-toggle-color);
     z-index: 200;
     border-radius: 25px;
     position: fixed;
@@ -44,24 +50,24 @@ label#skitt-toggle-button__label {
 }
 @-webkit-keyframes listen_pulse {
     0% {
-        background-color: #2980b9;
+        background-color: var(--tertiary-toggle-color);
     }
     50% {
-        background-color: #3498db;
+        background-color: var(--secondary-toggle-color);
     }
     100% {
-        background-color: #2980b9;
+        background-color: var(--tertiary-toggle-color);
     }
 }
 @keyframes listen_pulse {
     0% {
-        background-color: #2980b9;
+        background-color: var(--tertiary-toggle-color);
     }
     50% {
-        background-color: #3498db;
+        background-color: var(--secondary-toggle-color);
     }
     100% {
-        background-color: #2980b9;
+        background-color: var(--tertiary-toggle-color);
     }
 }
 .skitt-ui--not-listening #skitt-toggle-button:hover {
