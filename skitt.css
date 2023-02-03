@@ -94,6 +94,14 @@ label#skitt-toggle-button__label {
     font-weight: bold;
     margin-left: 10px;
 }
+@media (max-width: 725px) {
+    /* body {
+        background-color: bisque;
+    } */
+    #skitt-listening-box {
+        display: none;
+    }
+}
 @media (max-width: 1200px) and (orientation: portrait) {
     #skitt-ui {
         border-radius: 62.5px;
