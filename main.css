@@ -1,1 +1,9 @@
+#text {
+    font-size: 20em;
+}
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
