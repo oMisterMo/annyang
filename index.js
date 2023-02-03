@@ -1,6 +1,7 @@
 const init = () => {
     if (annyang) {
         console.log("annyang");
+        const text = document.querySelector("#text");
         // ========================================
         // Real Deal
         // ========================================
@@ -25,6 +26,7 @@ const init = () => {
         annyang.addCommands({
             "*sentence": function (tag) {
                 console.log(tag);
+                text.innerHTML = tag;
             },
         });
 
